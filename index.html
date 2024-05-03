@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Париж, город мёртвых</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* сюда под шумок пишем цсс пушто так надо, галерея не адекватно себя ведёт */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #ccc;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Париж, город мёртвых</h1> 
+            <nav>
+                <ul>
+                    <li><a href="#overview">О фильме</a></li>
+                    <li><a href="#description">Описание</a></li>
+                    <li><a href="#director">Режиссёр</a></li>
+                    <li><a href="#cast">Актёры</a></li>
+                    <li><a href="#video">Фильм</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <section id="overview" class="section">
+        <div class="container">
+            <h2>О фильме</h2>
+            <p>Величие Эйфелевой башни и роскошь бутиков, ароматы изысканной кухни и краски Елисейских полей — это лишь саван, под которым скрывается настоящий Париж. Здесь, в бесконечных катакомбах живут истинные владыки этого мира.</p>
+            <p>Главные герои исследуют тёмные уголки катакомб, пытаясь разгадать загадку прошлого города, окутанного мистикой и тайнами.</p>
+        </div>
+    </section>
+
+    <section id="description" class="section">
+        <div class="container">
+            <h2>Описание</h2>
+            <p>Величие Эйфелевой башни и роскошь бутиков, ароматы изысканной кухни и краски Елисейских полей — это лишь саван, под которым скрывается настоящий Париж. Здесь, в бесконечных катакомбах живут истинные владыки этого мира.</p>
+        </div>
+    </section>
+    
+    <section id="director" class="section">
+        <div class="container">
+            <h2>Режиссёр</h2>
+            <p>Джон Эрик Даудл — американский режиссёр и сценарист. Обычно он работает со своим братом Дрю Даудлом в качестве продюсера и сценариста.</p>
+        </div>
+    </section>
+    
+    <section id="cast" class="section">
+        <div class="container">
+            <h2>Актёры</h2>
+            <ul class="actor-list">
+                <li>
+                    <a href="https://www.google.com/search?q=бен+фельдман&client=opera-gx&hs=jCY&sca_esv=46dfe222c76fb569&sca_upv=1&ei=_aE0Zt-zDfeK9u8Po6ev8Ag&udm=&gs_ssp=eJzj4tTP1TcwT8opSDZg9BK_sPHC1gt7FS62AKndF3subLmw58KGC3sBLjoUCw&oq=бен+фе&gs_lp=Egxnd3Mtd2l6LXNlcnAiC9Cx0LXQvSDRhNC1KgIIADIFEC4YgAQyBRAuGIAEMgUQLhiABDIFEC4YgAQyBxAuGIAEGAoyBRAAGIAEMgUQLhiABDIFEAAYgAQyFBAuGIAEGJcFGNwEGN4EGN8E2AEBSNx6UMAKWIJrcAF4AJABAJgBzAGgAf8GqgEFMC41LjG4AQHIAQD4AQGYAgigAohnqAIAwgILEC4YgAQY0QMYxwHCAgoQABiABBhDGIoFwgIIEC4YgAQY1ALCAhoQLhiABBjRAxjHARiXBRjcBBjeBBjgBNgBAcICChAuGIAEGEMYigXCAhkQLhiABBhDGIoFGJcFGNwEGN4EGOAE2AEBmAMCugYGCAEQARgUkgcNMC40LjIuNy0xLjAuMaAHg94B&sclient=gws-wiz-serp" target="_blank">
+                    <img class="pupsik" src="./img2/ban.jpg" alt="бен">
+                </a>
+                    <div class="actor-details">
+                        <h3>Джродж</h3>
+                        <p>Бен Фельдман</p>
+                        <p>Дата рождения: 27 мая 1980</p>
+                        <p>Место рождения: Вашингтон, Колумбия, США</p>
+                    </div>
+                </li>                
+                <li>
+                    <a href="https://www.google.com/search?q=пердита&client=opera-gx&hs=UWD&sca_esv=46dfe222c76fb569&sca_upv=1&ei=w6E0ZpaSO6X87_UPxrSR2AE&udm=&gs_ssp=eJzj4tLP1TcwsjArMsozYPTiu7D_wtaLDRe2XNhxsenCBgCXcg2P&oq=пердита&gs_lp=Egxnd3Mtd2l6LXNlcnAiDtC_0LXRgNC00LjRgtCwKgIIADIFEC4YgAQyBRAAGIAEMgUQABiABDIFEC4YgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyCBAuGIAEGNQCMgUQABiABDIFEAAYgAQyFBAuGIAEGJcFGNwEGN4EGN8E2AEBSOkeUL8FWNEPcAF4AZABAJgBeqAB_gWqAQMzLjS4AQHIAQD4AQGYAgigAr0QqAIAwgIKEAAYgAQYQxiKBcICEBAuGIAEGNEDGEMYxwEYigXCAgoQLhiABBhDGIoFwgIHEAAYgAQYCpgDA7oGBggBEAEYFJIHBzAuNy43LTGgB8pZ&sclient=gws-wiz-serp" target="_blank">
+                    <img src="./img2/skarlett.jpg" alt="skarlett">
+                </a>
+                    <div class="actor-details">
+                        <h3>Скарлетт Марлоу</h3>
+                        <p>Пердита Викс</p><!--АХХАХАХААХАХХАААХААХАХААААХАХАХ СОРИ БРО-->
+                        <p>Дата рождения: 25 декабря 1985</p>
+                        <p>Место рождения: Кардифф, Уэльс</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://www.google.com/search?q=франсуа+сивиль&client=opera-gx&hs=RDY&sca_esv=46dfe222c76fb569&sca_upv=1&ei=KaI0ZtKNGIj87_UPv5-xiAQ&udm=&gs_ssp=eJzj4tLP1Tcws0wuNjIyYPSSvthyseHChgt7LzZebL6wQeFi44UdFzYB8e6LPQB59RYU&oq=франсуа+с&gs_lp=Egxnd3Mtd2l6LXNlcnAiEdGE0YDQsNC90YHRg9CwINGBKgIIADIFEC4YgAQyBRAAGIAEMgUQABiABDILEC4YgAQYxwEYrwEyBRAuGIAEMgcQLhiABBgKMgUQABiABDIFEAAYgAQyBRAuGIAEMgUQABiABDIUEC4YgAQYlwUY3AQY3gQY3wTYAQFIsZABUIVCWMOCAXAGeACQAQCYAboBoAGmDqoBBDAuMTS4AQHIAQD4AQGYAhOgAowcqAIAwgILEC4YgAQY0QMYxwHCAgkQABiABBgBGArCAgsQLhiABBgBGAoYKsICCRAuGIAEGAEYCsICGhAuGIAEGAEYChgqGJcFGNwEGN4EGOAE2AEBwgILEAAYgAQYARgKGCrCAgoQLhiABBhDGIoFwgIQEC4YgAQYQxjHARiKBRivAcICGRAuGIAEGEMYigUYlwUY3AQY3gQY3wTYAQHCAgoQABiABBhDGIoFwgINEC4YgAQYQxjUAhiKBZgDAboGBggBEAEYFJIHCjQuMTMuMS43LTGgB5vfAw&sclient=gws-wiz-serp" target="_blank">
+                    <img src="./img2/pap.jpg" alt="pap">
+                </a>
+                    <div class="actor-details">
+                        <h3>Папийон</h3>
+                        <p>Франсуа Сивиль</p>
+                        <p>Дата рождения: 29 января 1990</p>
+                        <p>Место рождения: Париж, Франция</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://www.google.com/search?client=opera-gx&sca_esv=39ef0498af3d5629&sca_upv=1&q=марион+ламберт&spell=1&sa=X&ved=2ahUKEwjOsLrnkfGFAxUigv0HHQiICCwQBSgAegQICRAC&biw=1239&bih=602&dpr=1.5" target="_blank">
+                        <img src="img2/marion.jpg" alt="Марион Ламбрет">
+                    </a>
+                    <div class="actor-details">
+                        <h3>Соусе</h3>
+                        <p>Марион Ламбрет</p>
+                        <p>Дата рождения: 21 сентября 1988 </p>
+                        <p>Место рождения:  Коньяк, Франция </p>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="https://www.google.com/search?client=opera-gx&sca_esv=39ef0498af3d5629&sca_upv=1&q=Эдвин+Ходж&stick=H4sIAAAAAAAAAONgFuLSz9U3iK9INjUuUwKzk3LTqkzMtYSyk6300zJzcsGEVXJicckiVuELay9subDpwo4LexUuLL2wD8jZBgAGUWfNRAAAAA&sa=X&ved=2ahUKEwiSw62jkvGFAxXCo_0HHe9nArAQ9OUBegQIARAG&biw=1239&bih=602&dpr=1.5" target="_blank">
+                        <img src="img2/banji.jpg" alt="Эдвин Ходж">
+                    </a>
+                    <div class="actor-details">
+                        <h3>Бенджи</h3>
+                        <p>Эдвин Ходж</p>
+                        <p>Дата рождения: 26 января 1985</p>
+                        <p>Место рождения: Джексонвилл, Северная Каролина, США</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="https://www.google.com/search?client=opera-gx&sca_esv=39ef0498af3d5629&sca_upv=1&q=Косме+Кастро&stick=H4sIAAAAAAAAAONgFuLSz9U3iK9INjUuUwKz0wpSiqpKtISyk6300zJzcsGEVXJicckiVvELsy7su9h4Yc-FrQpA5oaLjRebLjZc2AcAaqTxPUgAAAA&sa=X&ved=2ahUKEwiSw62jkvGFAxXCo_0HHe9nArAQ9OUBegQIARAK&biw=1239&bih=602&dpr=1.5" target="_blank">
+                        <img src="img2/kocme.jpg" alt="Косме Кастро">
+                    </a>
+                    <div class="actor-details">
+                        <h3>Крот</h3>
+                        <p>Косме Кастро</p>
+                        <p>Дата рождения: 3 марта 1986</p>
+                        <p>Место рождения: Иври-сюр-Сен, Франция</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="video" class="section">
+        <div class="container">
+            <h2>Видеоплеер</h2>
+            <div class="video-container">
+                <video id="movie" controls preload="metadata">
+                    <source src="img2/video.mp4" type="video/mp4">
+                    <source src="img2/video.webm" type="video/webm">
+                    Ваш браузер не поддерживает элемент <video>. Пожалуйста, обновите его.
+                </video>
+                <div class="video-controls">
+                    <button class="toggle-button" id="play-pause">Воспроизведение</button>
+                    <button class="toggle-button" id="stop">Стоп</button>
+                    <input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider" id="volume">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>Галерея</h2>
+            <div class="image-gallery">
+                <img src="image/1.jpg" alt="Изображение 1">
+                <img src="image/2.jpg" alt="Изображение 2">
+                <img src="image/3.jpg" alt="Изображение 3">
+                <img src="image/4.jpg" alt="Изображение 4">
+                <img src="image/5.jpg" alt="Изображение 5">
+            </div>
+            <!-- неадекват заруинивший мне сайт -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImg">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var images = document.querySelectorAll(".image-gallery img");
+            var modal = document.querySelector(".modal");
+            var modalContent = document.querySelector(".modal-content");
+            var closeButton = document.querySelector(".close");
+
+            images.forEach(function(image) {
+                image.addEventListener("click", function() {
+                    modal.style.display = "block";
+                    modalContent.src = this.src;
+                });
+            });
+
+            closeButton.addEventListener("click", function() {
+                modal.style.display = "none";
+            });
+
+            window.addEventListener("click", function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+
+            var video = document.getElementById("movie");
+            var playPauseButton = document.getElementById("play-pause");
+            var stopButton = document.getElementById("stop");
+            var volumeSlider = document.getElementById("volume");
+
+            playPauseButton.addEventListener("click", function() {
+                if (video.paused || video.ended) {
+                    video.play();
+                    playPauseButton.textContent = "Пауза";
+                } else {
+                    video.pause();
+                    playPauseButton.textContent = "Воспроизведение";
+                }
+            });
+
+            stopButton.addEventListener("click", function() {
+                video.pause();
+                video.currentTime = 0;
+                playPauseButton.textContent = "Воспроизведение";
+            });
+
+            volumeSlider.addEventListener("input", function() {
+                video.volume = volumeSlider.value;
+            });
+        });
+    </script> 
+</body>
+<footer>
+    <div class="container">
+        <p>© 2024 Париж, город мёртвых. Все права защищены.</p>
+    </div>
+</footer>
+</html>
